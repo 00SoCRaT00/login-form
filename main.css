@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.back {
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.continer {
+    background-color: white;
+    width: 1000px;
+    height: 700px;
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px;
+}
+
+.continer .img {
+    width: 40%;
+}
+
+.continer .form {
+    width: 40%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    position: relative;
+}
+
+.form span:first-child {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 54px;
+    text-align: center;
+}
+
+.form i:first-of-type {
+    position: absolute;
+    top: 105px;
+    left: 26px;
+    font-size: 19px;
+    color: #666666;
+}
+
+.form i:last-of-type {
+    position: absolute;
+    top: 163px;
+    left: 26px;
+    font-size: 19px;
+    color: #666666;
+}
+
+.form input {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666666;
+    display: block;
+    width: 100%;
+    background: #e6e6e6;
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 30px 0 68px;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.form input[type="submit"] {
+    margin-top: 20px;
+    padding: 0 25px;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    background: #57B846;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.form input[type="submit"]:focus {
+    animation: none;
+}
+
+.form input:focus,
+.form input:focus i {
+    -webkit-animation: anim-shadow 0.5s linear forwards;
+    animation: anim-shadow 0.5s linear forwards;
+}
+
+.form input:focus i {
+    color: #57B846;
+}
+
+.form div span,
+.form div a {
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    color: gray;
+    text-decoration: none;
+    transition: 0.5s linear;
+    margin-bottom: 30px;
+}
+
+.form div a:hover {
+    cursor: pointer;
+    color: #57B846;
+}
+
+.form div {
+    text-align: center;
+}
+
+@keyframes anim-shadow {
+    0% {
+        box-shadow: 0px 0px 100px 5px #57B846;
+    }
+    100% {
+        box-shadow: 0px 0px 0px 0px #57B846;
+    }
+}
+
+@media (max-width:767px) {
+    .continer {
+        padding: 50px;
+    }
+    .continer .img {
+        display: none;
+    }
+    .continer .form {
+        width: 100%;
+    }
+}
